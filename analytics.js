@@ -22,3 +22,7 @@ export function findTopStudent(students) {
   );
  
 }
+
+export function filterStudents(students, criteriaFn) {
+  return students.filter(criteriaFn);
+}
