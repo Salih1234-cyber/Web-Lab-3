@@ -14,5 +14,11 @@ export class Student {
     this.courses = courses; 
   }
 
+  addCourse(courseId, grade) {
+
+    this.courses.push({ courseId, grade });
+  }
+
   
+ 
 }
