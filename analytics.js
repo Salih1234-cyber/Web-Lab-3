@@ -11,3 +11,14 @@ export function calculateClassAverage(students, courseId) {
   return total / scores.length;
 
 }
+
+
+export function findTopStudent(students) {
+  if (students.length === 0) return null;       
+
+ 
+  return students.reduce((top, current) =>
+    current.getAverage() > top.getAverage() ? current : top
+  );
+ 
+}
