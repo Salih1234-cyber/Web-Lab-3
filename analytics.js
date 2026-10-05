@@ -20,5 +20,13 @@ export class Student {
   }
 
   
- 
+  getAverage() {
+    
+    if (this.courses.length === 0) return 0;
+
+    
+    const total = this.courses.reduce((sum, c) => sum + c.grade, 0);
+
+    return total / this.courses.length;
+  }
 }
